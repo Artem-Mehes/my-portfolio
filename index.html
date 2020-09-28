@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" iyntegrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style/style.css">
@@ -22,125 +22,668 @@
     </header>
 
     <div class="wrapper">
-        <aside class="nav">
-            <nav>
+        <aside class="aside-nav">
+            <nav class="nav">
+                <span class="nav__highlight" id="nav-highlight"></span>
                 <ul>
-                    <li class="nav__item"><a class="nav__item-link" href="">General Information</a></li>
-                    <li class="nav__item"><a class="nav__item-link" href="">Skills</a></li>
-                    <li class="nav__item"><a class="nav__item-link" href="">Certificates</a></li>
-                    <li class="nav__item"><a class="nav__item-link" href="">Projects</a></li>
-                    <li class="nav__item"><a class="nav__item-link" href="">Education</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#general">General Information</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#skills">Skills</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#projects">Projects</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#certification">Certification</a></li>
+                    <li class="nav__item"><a class="nav__item-link" href="#education">Education</a></li>
                 </ul>
             </nav>
         </aside>
-        
-        <section class="about">
-            <div class="about__inner container">
-                <div class="about__info">
-                    <h2 class="about__title">Mehes Artem</h2>
-                    <p class="about__subtitle">Junior Front-End Developer</p>
-                </div>
-        
-                <img class="about__photo" src="images/photo.jpg" alt="photo">
-            </div>
-        </section>
     
-        <aside class="contacts-icons">
-            <ul class="contacts-icons__list">
-                <li class="contacts-icons__item"><a class="contacts-icons__link" href="https://www.linkedin.com/in/artem-mehes-b011901b6/"><i class="fab fa-linkedin"></i></a></li>
-                <li class="contacts-icons__item"><a class="contacts-icons__link" href="https://t.me/Artem_Meges"><i class="fab fa-telegram"></i></a></li>
-                <li class="contacts-icons__item"><a class="contacts-icons__link" href="https://codepen.io/collection/XdJjPa"><i class="fab fa-codepen"></i></a></li>
-                <li class="contacts-icons__item"><a class="contacts-icons__link" href="https://github.com/Artem-Mehes"><i class="fab fa-github"></i></a></li>
+        <main class="main">
+            <div class="main__container">
+                <section class="about">
+                    <div class="about__info">
+                        <h2 class="about__title">Mehes Artem</h2>
+                        <p class="about__subtitle">Junior Front-End Developer</p>
+                    </div>
+                    
+                    <img class="about__photo" src="images/photo.jpg" alt="photo">
+                </section>
+    
+                <section class="general section" id="general">
+                    <h3 class="general__title">General Information</h3>
+    
+                    <ul class="general__list">
+                        <li>My experience in front end development is less than
+                            one year , but I study all the time, want to grow and
+                            solve hard tasks. In the future, I want to develop in
+                            the direction of a <span><i>full stack</i></span>.</li>
+                        <li><span>Desired place of work:</span> Kiev or remote.</li>
+                        <li><span>Desired salary:</span> 400$-500$.</li>
+                        <li>
+                            <span>Languages:</span>
+                            <ul class="general__languages">
+                                <li class="general__languages-item">English - Intermediate</li>
+                                <li class="general__languages-item">Ukrainian - Native</li>
+                                <li class="general__languages-item">Russian - Native</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+    
+                <section class="skills section" id="skills">
+                    <h3>Skills</h3>
+    
+                    <ul class="skills__list">
+                        <li class="skills__list-item">Semantic HTML</li>
+                        <li class="skills__list-item">CSS (flexbox, grid)</li>
+                        <li class="skills__list-item">Adaptive layout</li>
+                        <li class="skills__list-item">JavaScript (ES6+)</li>
+                        <li class="skills__list-item">React</li>
+                        <li class="skills__list-item">React Router</li>
+                        <li class="skills__list-item">Redux</li>
+                        <li class="skills__list-item">Git / Github / Firebase</li>
+                        <li class="skills__list-item">npm / yarn</li>
+                        <li class="skills__list-item">SCSS</li>
+                        <li class="skills__list-item">Bootstrap 4</li>
+                        <li class="skills__list-item">Using BEM methodology for class names in CSS</li>
+                        <li class="skills__list-item">Understand the principles of OOP</li>
+                        <li class="skills__list-item">A little bit of Jquery</li>
+                        <li class="skills__list-item">Can work with API</li>
+                        <li class="skills__list-item">Figma, basic level of Photoshop</li>
+                    </ul>
+                </section>
+
+                <section class="projects items section" id="projects">
+                    <h3>Projects</h3>
+                        <div class="items__wrapper">
+                            <ul class="items__list">
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Tic-Tac-Toe Game</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/tic-tac-toe-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/react-tic-tac-toe/tree/master"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/react-tic-tac-toe/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">React</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Marvel Comics App</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/marvel-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/js-random-joke"><i class="fab fa-github"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox, Grid</li>
+                                                    <li class="items__technologies-item">JavaScript</li>
+                                                    <li class="items__technologies-item">Fetch, async / await</li>
+                                                    <li class="items__technologies-item">Local Storage</li>
+                                                    <li class="items__technologies-item">Crypto JS</li>
+                                                    <li class="items__technologies-item">Marvel API</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Currency Rate App</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/rate-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/react-currency-rate/tree/master"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/react-currency-rate/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">React</li>
+                                                    <li class="items__technologies-item">React-Select</li>
+                                                    <li class="items__technologies-item">Fetch</li>
+                                                    <li class="items__technologies-item">React-Slick</li>
+                                                    <li class="items__technologies-item">Currency Rate API</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Costs Calculator</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/costs-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/react-expenses-calculator/tree/master"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/react-expenses-calculator/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">React</li>
+                                                    <li class="items__technologies-item">Local Storage</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Games Landing Page</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/games-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/game-site"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/game-site/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">SCSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">Jquery</li>
+                                                    <li class="items__technologies-item">Slick</li>
+                                                    <li class="items__technologies-item">Photoshop</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">To-Do List</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/to-do-project.png" alt="to-do-list">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://codepen.io/artem-meges/pen/PoZRoxN?editors=0010"><i class="fab fa-codepen"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">JavaScript</li>
+                                                    <li class="items__technologies-item">Local Storage</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Romans Converter</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/romans-project.png" alt="romans converter">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://codepen.io/artem-meges/pen/eYZWVdZ"><i class="fab fa-codepen"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">JavaScript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <ul class="items__list">
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Pokemon App</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/pokemon-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/react-pokemon-app/tree/master"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/react-pokemon-app/#/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">SCSS</li>
+                                                    <li class="items__technologies-item">Flexbox, Grid</li>
+                                                    <li class="items__technologies-item">React</li>
+                                                    <li class="items__technologies-item">Hooks</li>
+                                                    <li class="items__technologies-item">React-Router</li>
+                                                    <li class="items__technologies-item">Fetch, async / await</li>
+                                                    <li class="items__technologies-item">Poke API</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Chuck Norris Random Jokes</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/joke-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/js-random-joke"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/js-random-joke/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">JavaScript</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">Fetch</li>
+                                                    <li class="items__technologies-item">Local Storage</li>
+                                                    <li class="items__technologies-item">Chuck Norris API</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Interior Landing Page</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/interior-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/interior-site"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/interior-site/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">SCSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">Grid</li>
+                                                    <li class="items__technologies-item">Jquery</li>
+                                                    <li class="items__technologies-item">Slick</li>
+                                                    <li class="items__technologies-item">Photoshop</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Calculator</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/calculator-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://codepen.io/artem-meges/pen/yLOYpzx?editors=0010"><i class="fab fa-codepen"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">Grid</li>
+                                                    <li class="items__technologies-item">JavaScript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Form Validation</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/validation-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://codepen.io/artem-meges/pen/wvGBWao?editors=0010"><i class="fab fa-codepen"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">JavaScript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Medical Landing Page</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/medical-project.png" alt="tic-tac-toe">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://github.com/Artem-Mehes/medical-site"><i class="fab fa-github"></i></a></li>
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://artem-mehes.github.io/medical-site/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">Jquery</li>
+                                                    <li class="items__technologies-item">Slick</li>
+                                                    <li class="items__technologies-item">Photoshop</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Carousel</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/carousel-project.png" alt="carousel">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://codepen.io/artem-meges/full/JjGLvdV"><i class="fab fa-codepen"></i></a></li>
+                                                </ul>
+                                            </div>
+        
+                                            <div class="items__technologies">
+                                                <h4>Used Technologies:</h4>
+                                                <ul class="items__technologies-list">
+                                                    <li class="items__technologies-item">HTML</li>
+                                                    <li class="items__technologies-item">CSS</li>
+                                                    <li class="items__technologies-item">Flexbox</li>
+                                                    <li class="items__technologies-item">JavaScript</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+
+                <section class="certification items section" id="certification">
+                    <h3>Certification</h3>
+                        <div class="items__wrapper">
+                            <ul class="items__list">
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Programming Foundations with JavaScript, HTML and CSS</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/progr-found.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://coursera.org/share/afc796e785abab82f4bb330940120b16"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">CSS Fundamentals</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/css-fundam.jpg" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://www.sololearn.com/Certificate/1023-16586399/pdf/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Version Control with Git</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/git.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://coursera.org/share/24a63dd86d3f872ef3eeb20036d07d11"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">React. Lite Level</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/react-lite.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://itgid.info/img/certificate/02_igr1156.png"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Build Your First React Website</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/first-website.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://coursera.org/share/fddc5a9b8c7acf20f0e3dbfdb8b0ce53"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">CSS Animated Components with ReactJS</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/anim.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://coursera.org/share/273cc38d629cf36f9e841faa84251503"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
+                            <ul class="items__list">
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">HTML Fundamentals</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/html-fundam.jpg" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://www.sololearn.com/Certificate/1014-16586399/pdf/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">JavaScript Tutorial course</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/js.jpg" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://www.sololearn.com/Certificate/1024-16586399/pdf/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Front-End Web UI Frameworks and Tools: Bootstrap 4</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/bs4.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://www.sololearn.com/Certificate/1024-16586399/pdf/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Front-End Web Development with React</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/front-end.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://coursera.org/share/19fc170730cf929ff809e9d3cf6dc0f7"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">Introduction to Front-end Development with ReactJS</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/intro.png" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://coursera.org/share/7e8c5a2029b60633d1524b835df920f4"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                                <li class="items__item">
+                                    <figure>
+                                        <figcaption class="items__title">React + Redux</figcaption>
+                                        <div class="items__inner">
+                                            <img class="items__img" src="images/react-redux.jpg" alt="certificate">
+        
+                                            <div class="items__icons">
+                                                <ul class="items__icons-list">
+                                                    <li class="items__icons-item"><a class="items__icons-link" href="https://www.sololearn.com/Certificate/1097-16586399/pdf/"><i class="fas fa-link"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+
+                <section class="education section" id="education">
+                    <h3>Education</h3>
+
+                    <div class="education__item">
+                        <div class="education__title">
+                            <span>Radiotechnics</span> Sep. 2012 - Jun. 2015
+                        </div>
+                        
+                        <div class="education__place">
+                            Kiev College of Communications
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="education__item">
+                        <div class="education__title">
+                            <span>Medicine</span> Sep. 2015 - Jun. 2021 
+                        </div>
+                        
+                        <div class="education__place">
+                            Bogomolets National Medical University
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    
+        <aside class="aside-contacts">
+            <ul class="contacts-list">
+                <li class="contacts-list__item"><a class="contacts-list__link" href="https://www.linkedin.com/in/artem-mehes-b011901b6/"><i class="fab fa-linkedin"></i></a></li>
+                <li class="contacts-list__item"><a class="contacts-list__link" href="https://t.me/Artem_Meges"><i class="fab fa-telegram"></i></a></li>
+                <li class="contacts-list__item"><a class="contacts-list__link" href="https://codepen.io/collection/XdJjPa"><i class="fab fa-codepen"></i></a></li>
+                <li class="contacts-list__item"><a class="contacts-list__link" href="https://github.com/Artem-Mehes"><i class="fab fa-github"></i></a></li>
             </ul>
         </aside>
     </div>
 
-    <main class="main">
-        <div class="container">
-            <section class="general">
-                <h2 class="general__title">General Information</h2>
-
-                <ul class="general__list">
-                    <li>My experience in front end development is less than
-                        one year , but I study all the time, want to grow and
-                        solve hard tasks. In the future, I want to develop in
-                        the direction of a <span><i>full stack</i></span>.</li>
-                    <li><span>Desired place of work</span>: Kiev or remote.</li>
-                    <li><span>Desired salary</span>: 400$-500$.</li>
-                    <li>
-                        <span>Languages:</span>
-                        <ul>
-                            <li>English - Intermediate</li>
-                            <li>Ukrainian - Native</li>
-                            <li>Russian - Native</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="skills">
-                <h2>Skills</h2>
-
-                <ul>
-                    <li>Semantic HTML</li>
-                    <li>CSS (flexbox, grid)</li>
-                    <li>Adaptive layout</li>
-                    <li>JavaScript (ES6+)</li>
-                    <li>React</li>
-                    <li>React Router</li>
-                    <li>Redux</li>
-                    <li>Git / Github / Firebase</li>
-                    <li>SCSS</li>
-                    <li>Bootstrap 4</li>
-                    <li>Using BEM methodology for class names in CSS</li>
-                    <li>Understand the principles of OOP</li>
-                    <li>A little bit of Jquery</li>
-                    <li>Can work with API</li>
-                    <li>Figma, basic level of Photoshop</li>
-                </ul>
-            </section>
-        </div>
-    </main>
-
-    <!-- 
-
-    
-    <section class="certificates">
-        <ul>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-        </ul>
-    </section>
-
-    <section class="projects">
-        <ul>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-            <li><a href=""><img src="" alt=""></a></li>
-        </ul>
-    </section>
-
-    <section class="education">
-
-    </section>
-
-    <footer>
-        
-    </footer> -->
+    <script src="index.js"></script>
 </body>
 </html>
