@@ -6,7 +6,7 @@ $accent-color: #ea720b;
     border-bottom: 5px solid $accent-color;
 }
 
-@mixin text-highlight($width: 164px, $height: 25px, $bottom: -7px, $left: -56px, $top: auto) {
+@mixin text-highlight($width: auto, $height: auto, $bottom: auto, $left: auto, $top: auto) {
     background-color: $accent-color;
     width: $width;
     height: $height;
@@ -19,7 +19,7 @@ $accent-color: #ea720b;
 }
 
 html {
-    font-size: 20px;
+    font-size: 17px;
 }
 
 body {
@@ -46,7 +46,7 @@ h2, h3 {
 
     &::before {
         content: '';
-        @include text-highlight();
+        @include text-highlight(149px, 17px, -5px, -44px);
     }
 }
 
@@ -87,13 +87,13 @@ img {
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 0 2rem;
     }
 
     &__contacts {
         display: flex;
         justify-content: space-between;
-        min-width: 45%;
+        min-width: 500px;
 
         &-link:hover {
             @extend %border-hover;
@@ -103,7 +103,7 @@ img {
 
 .wrapper {
     display: flex;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 4.5rem;
 }
 
 .nav,
@@ -114,7 +114,7 @@ img {
 
 .aside-nav {
     .nav__highlight {
-        @include text-highlight(97px, 10px, 0, -34px, 14px);
+        @include text-highlight(80px, 10px, 0, -26px, 5%);
     }
 }
 
@@ -137,17 +137,14 @@ img {
 .about {
     display: flex;
     align-items: center;
-
-    &__info {
-        margin-right: 15rem;
-    }
+    justify-content: space-around;
 
     &__title {
         font-size: 2.5rem;
 
         &::before {
             width: 100%;
-            left: -52px;
+            left: -46px;
         }
     }
 
@@ -188,7 +185,7 @@ img {
         list-style: circle;
 
         &-item {
-            margin: 0 0 .5rem 2rem;
+            margin: 0 0 0 2rem;
         }
     }
 }
@@ -208,13 +205,13 @@ img {
     &__wrapper {
         display: flex;
 
-        .items__list:nth-child(1) {
+        .items__list:first-child {
             margin-right: 12rem;
         }
     }
 
     &__list {
-        max-width: 35%;
+        width: 442px;
     }
 
     &__title {
@@ -289,10 +286,98 @@ img {
     }
 }
 
+.certification {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &__item {
+        max-width: 480px;
+
+        &:nth-child(odd) {
+            margin-right: 9rem;
+        }
+    }
+
+}
+
 .education {
+    &__item {
+        margin: 2rem 0;
+    }
+
     &__title {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         display: flex;
         justify-content: space-between;
+    }
+}
+
+@media (max-width: 1730px) {
+    .main__container {
+        max-width: 1123px;
+    }
+}
+
+@media (max-width: 1610px) {
+    .main__container {
+        max-width: 953px;
+    }
+}
+
+@media (max-width: 1435px) {
+    .main__container {
+        max-width: 743px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .main__container {
+        max-width: 603px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .main__container {
+        max-width: 545px;
+    }
+
+    .skills__list {
+        columns: 2;
+    }
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .header__contacts {
+        min-width: 356px;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .header__contacts {
+        flex-direction: column;
+        align-items: flex-end;
+        min-width: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__container {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .header__contacts {
+        font-size: .6rem;
     }
 }
