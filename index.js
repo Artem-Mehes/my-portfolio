@@ -1,5 +1,8 @@
 const navHighlight = document.querySelector('#nav-highlight'),
-    sections = document.querySelectorAll('.section');
+    sections = document.querySelectorAll('.section'),
+    burgerWrapper = document.querySelector('#burger-wrapper'),
+    burger = document.querySelector('#burger'),
+    nav = document.querySelector('#nav');
 
 const windowHeight = document.documentElement.clientHeight;
 
@@ -40,6 +43,10 @@ const checkScreenWidth = () => {
     }
 }
 
-checkScreenWidth();
-
 window.addEventListener('resize', checkScreenWidth);
+burgerWrapper.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    nav.classList.toggle('open');
+});
+
+checkScreenWidth();
