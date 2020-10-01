@@ -20,6 +20,11 @@ $accent-color: #ea720b;
 
 html {
     font-size: 17px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
 }
 
 body {
@@ -234,6 +239,8 @@ img {
 
     &__img {
         margin-right: 1rem;
+        object-fit: contain;
+        border: 5px solid;
     }
 
     &__item {
@@ -258,7 +265,7 @@ img {
     &__inner {
         position: relative;
         display: flex;
-        border: 5px solid $text-color;
+        align-items: flex-start;
 
         &:hover .items__icons {
             display: flex;
@@ -332,21 +339,68 @@ img {
     .main__container {
         max-width: 1123px;
     }
+
+    .items__list {
+        width: 400px;
+    } 
 }
 
 @media (max-width: 1610px) {
     .main__container {
         max-width: 953px;
     }
+
+    .items__list {
+        width: 327px;
+    }
 }
 
 @media (max-width: 1435px) {
+    .wrapper {
+        padding: 2rem 3rem 4.5rem;
+    }
+
     .main__container {
-        max-width: 743px;
+        max-width: 892px;
+    }
+
+    .items__list {
+        width: 290px;
+    }
+
+    .items__wrapper .items__list:first-child {
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 1370px) {
+    .items__list {
+        width: 268px;
+    }
+
+    .main__container {
+        max-width: 799px;
+    }
+
+    .items__wrapper .items__list:first-child {
+        margin-right: 9rem;
     }
 }
 
 @media (max-width: 1230px) {
+    .items__wrapper {
+        display: block;
+    }
+
+    .items__list {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .items__wrapper .items__list:first-child {
+        margin-right: 0; 
+    }
+
     .main__container {
         max-width: 603px;
     }
@@ -433,6 +487,7 @@ img {
         position: fixed;
         top: 59px;
         right: 0;
+        z-index: 1;
 
         .nav {
             &__list {
@@ -447,6 +502,10 @@ img {
                 margin-bottom: 0;
             }
         }
+    }
+
+    .items__technologies {
+        min-width: 25%;
     }
 }
 
@@ -544,6 +603,7 @@ img {
         position: absolute;
         z-index: 6;
         left: 13px;
+        top: 9px;
 
         &__burger {
             width: 22px;
@@ -617,7 +677,14 @@ img {
         .nav.open {
             display: block;
         }
-        
+    }
+
+    .skills__list {
+        columns: 2;
+    }
+
+    .items__list {
+        width: 70%;
     }
 }
 

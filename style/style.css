@@ -4,6 +4,13 @@
 
 html {
   font-size: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -255,6 +262,9 @@ img {
 
 .items__img {
   margin-right: 1rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 5px solid;
 }
 
 .items__item {
@@ -283,7 +293,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 5px solid #eee9e2;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .items__inner:hover .items__icons {
@@ -372,21 +384,58 @@ img {
   .main__container {
     max-width: 1123px;
   }
+  .items__list {
+    width: 400px;
+  }
 }
 
 @media (max-width: 1610px) {
   .main__container {
     max-width: 953px;
   }
+  .items__list {
+    width: 327px;
+  }
 }
 
 @media (max-width: 1435px) {
+  .wrapper {
+    padding: 2rem 3rem 4.5rem;
+  }
   .main__container {
-    max-width: 743px;
+    max-width: 892px;
+  }
+  .items__list {
+    width: 290px;
+  }
+  .items__wrapper .items__list:first-child {
+    margin-right: 10rem;
+  }
+}
+
+@media (max-width: 1370px) {
+  .items__list {
+    width: 268px;
+  }
+  .main__container {
+    max-width: 799px;
+  }
+  .items__wrapper .items__list:first-child {
+    margin-right: 9rem;
   }
 }
 
 @media (max-width: 1230px) {
+  .items__wrapper {
+    display: block;
+  }
+  .items__list {
+    width: 80%;
+    margin-right: 0;
+  }
+  .items__wrapper .items__list:first-child {
+    margin-right: 0;
+  }
   .main__container {
     max-width: 603px;
   }
@@ -467,6 +516,7 @@ img {
     position: fixed;
     top: 59px;
     right: 0;
+    z-index: 1;
   }
   .aside-nav .nav__list {
     display: -webkit-box;
@@ -482,6 +532,9 @@ img {
   }
   .aside-nav .nav__item {
     margin-bottom: 0;
+  }
+  .items__technologies {
+    min-width: 25%;
   }
 }
 
@@ -578,6 +631,7 @@ img {
     position: absolute;
     z-index: 6;
     left: 13px;
+    top: 9px;
   }
   .burger-wrapper__burger {
     width: 22px;
@@ -642,6 +696,13 @@ img {
   }
   .aside-nav .nav.open {
     display: block;
+  }
+  .skills__list {
+    -webkit-columns: 2;
+            columns: 2;
+  }
+  .items__list {
+    width: 70%;
   }
 }
 
