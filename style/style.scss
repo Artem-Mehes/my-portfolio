@@ -113,8 +113,16 @@ img {
         display: flex;
         justify-content: space-between;
         min-width: 500px;
+    }
 
-        &-link:hover {
+    &__item {
+        margin-bottom: 0;
+    }
+
+    &__link {
+        height: 1.7rem;
+
+        &:hover {
             @extend %border-hover;
         }
     }
@@ -126,7 +134,7 @@ img {
 }
 
 .nav,
-.contacts-list {
+.aside-contacts__list {
     position: sticky;
     top: 18%;
 }
@@ -136,7 +144,7 @@ img {
     @include text-highlight(80px, 10px, 0, -26px, 5%);
 }
 
-.contacts-list {
+.aside-contacts {
     &__list {
         display: flex;
         flex-direction: column;
@@ -463,15 +471,15 @@ img {
         z-index: 5;
         left: 0;
 
-        .contacts-list {
+        &__list {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-left: 1rem;
+        }
 
-            &__item {
-                margin-bottom: 0;
-            }
+        &__item {
+            margin-bottom: 0;
         }
     }
 

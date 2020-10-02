@@ -1,4 +1,4 @@
-.header__contacts-link:hover {
+.header__link:hover {
   border-bottom: 5px solid #ea720b;
 }
 
@@ -123,6 +123,14 @@ img {
   min-width: 500px;
 }
 
+.header__item {
+  margin-bottom: 0;
+}
+
+.header__link {
+  height: 1.7rem;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +139,7 @@ img {
 }
 
 .nav,
-.contacts-list {
+.aside-contacts__list {
   position: -webkit-sticky;
   position: sticky;
   top: 18%;
@@ -151,7 +159,7 @@ img {
   transition: top .5s;
 }
 
-.contacts-list__list {
+.aside-contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,12 +169,12 @@ img {
           flex-direction: column;
 }
 
-.contacts-list__link {
+.aside-contacts__link {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.contacts-list__link:hover {
+.aside-contacts__link:hover {
   color: #ea720b;
 }
 
@@ -489,7 +497,7 @@ img {
     z-index: 5;
     left: 0;
   }
-  .aside-contacts .contacts-list {
+  .aside-contacts__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -501,11 +509,10 @@ img {
             align-items: center;
     padding-left: 1rem;
   }
-  .aside-contacts .contacts-list__item {
+  .aside-contacts__item {
     margin-bottom: 0;
   }
-  .nav,
-  .contacts-list {
+  .nav, .contacts-list {
     top: 0;
     background-color: #232B32;
     z-index: 5;
