@@ -77,6 +77,7 @@ figure {
 
 img {
     max-width: 100%;
+    background-color: $text-color;
 }
 
 ::-webkit-scrollbar {
@@ -91,6 +92,10 @@ img {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background-color: $text-color;
+
+    &:active {
+        background-color: $accent-color;
+    }
 }
 
 .header {
@@ -130,7 +135,7 @@ img {
 
 .wrapper {
     display: flex;
-    padding: 2rem 4rem 4.5rem;
+    padding: 2rem 4rem 5.5rem;
 }
 
 .nav,
@@ -318,15 +323,11 @@ img {
     &__list {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: space-around;
     }
 
     &__item {
         max-width: 480px;
-
-        &:nth-child(odd) {
-            margin-right: 9rem;
-        }
     }
 
 }
@@ -350,7 +351,11 @@ img {
 
     .items__list {
         width: 400px;
-    } 
+    }
+    
+    .certification__item {
+        max-width: 415px;
+    }
 }
 
 @media (max-width: 1610px) {
@@ -365,7 +370,7 @@ img {
 
 @media (max-width: 1435px) {
     .wrapper {
-        padding: 2rem 3rem 4.5rem;
+        padding: 2rem 3rem 5.5rem;
     }
 
     .main__container {
@@ -378,6 +383,10 @@ img {
 
     .items__wrapper .items__list:first-child {
         margin-right: 10rem;
+    }
+
+    .certification__item {
+        max-width: 373px;
     }
 }
 
@@ -411,6 +420,10 @@ img {
 
     .main__container {
         max-width: 603px;
+    }
+
+    .certification__item {
+        max-width: 100%;
     }
 }
 
@@ -460,7 +473,7 @@ img {
     }
 
     .wrapper {
-        padding: 4rem 2rem 4.5rem;
+        padding: 4rem 2rem 5.5rem;
     }
 
     .aside-contacts {
@@ -472,10 +485,10 @@ img {
         left: 0;
 
         &__list {
-            display: flex;
+            flex-direction: row;
+            padding-left: 1rem;
             justify-content: space-between;
             align-items: center;
-            padding-left: 1rem;
         }
 
         &__item {
@@ -483,7 +496,7 @@ img {
         }
     }
 
-    .nav, .contacts-list {
+    .nav, .aside-contacts__list {
         top: 0;
         background-color: $bg-color;
         z-index: 5;
@@ -496,19 +509,19 @@ img {
         top: 59px;
         right: 0;
         z-index: 1;
+    }
 
-        .nav {
-            &__list {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                height: 40px;
-            }
+    .nav {
+        &__list {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 40px;
+        }
 
 
-            &__item {
-                margin-bottom: 0;
-            }
+        &__item {
+            margin-bottom: 0;
         }
     }
 
@@ -553,7 +566,7 @@ img {
         top: 69px;
         width: 100%;
 
-        .contacts-list {
+        &__list {
             justify-content: space-evenly;
         }
     }
@@ -566,18 +579,18 @@ img {
 
 @media (max-width: 520px) {
     .wrapper {
-        padding: 4rem 3rem 4.5rem;
+        padding: 4rem 3rem 5.5rem;
     }
 
-    .aside-nav {
+    .nav {
         top: 107px;
 
-        .nav__list {
+        &__list {
             justify-content: space-between;
             padding: 0 1rem;
         }
 
-        .nav__item {
+        &__item {
             max-width: 14%;
         }
     }
@@ -666,25 +679,25 @@ img {
 
     .aside-nav {
         top: 109px;
+    }
 
-        .nav {
-            height: 106px;
-            display: none;
+    .nav {
+        height: 106px;
+        display: none;
 
-            &__list {
-                padding: 0;
-                flex-direction: column;
-            }
-
-            &__item {
-                max-width: 100%;
-                margin-bottom: .5rem;
-            }
+        &__list {
+            padding: 0;
+            flex-direction: column;
         }
 
-        .nav.open {
-            display: block;
+        &__item {
+            max-width: 100%;
+            margin-bottom: .5rem;
         }
+    }
+
+    .nav.open {
+        display: block;
     }
 
     .skills__list {
