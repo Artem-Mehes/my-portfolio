@@ -76,7 +76,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-  width: .8rem;
+  width: .6rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -264,7 +264,7 @@ img {
 }
 
 .projects__list {
-  width: 442px;
+  max-width: 442px;
 }
 
 .card {
@@ -347,7 +347,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 71px;
+  height: 4.5rem;
 }
 
 .icons__item {
@@ -368,9 +368,8 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .certification__item {
@@ -404,6 +403,9 @@ img {
 }
 
 @media (max-width: 1610px) {
+  .wrapper {
+    padding: 2rem 3rem 5.5rem;
+  }
   .main__container {
     max-width: 953px;
   }
@@ -413,9 +415,6 @@ img {
 }
 
 @media (max-width: 1435px) {
-  .wrapper {
-    padding: 2rem 3rem 5.5rem;
-  }
   .main__container {
     max-width: 892px;
   }
@@ -554,9 +553,6 @@ img {
   }
   .nav__item {
     margin-bottom: 0;
-  }
-  .technologies {
-    min-width: 25%;
   }
 }
 
