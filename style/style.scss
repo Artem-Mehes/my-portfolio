@@ -232,22 +232,15 @@ img {
     }
 }
 
-.projects {
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 7rem;
-    }
-
-    &__list {
-        max-width: 442px;
-    }
+.cards-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-
 .card {
-    display: flex;
     margin-bottom: 3rem;
+    max-width: 34%;
 
     &__title {
         margin-bottom: 1rem;
@@ -263,7 +256,10 @@ img {
     &__inner {
         position: relative;
         display: flex;
-        align-items: flex-start;
+
+        &--smaller-height {
+            max-height: 215px;
+        }
 
         &:hover .icons {
             display: flex;
@@ -323,16 +319,9 @@ img {
 }
 
 .certification {
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
     &__item {
         max-width: 480px;
     }
-
 }
 
 .education {
@@ -352,10 +341,6 @@ img {
         max-width: 1123px;
     }
 
-    .projects__list {
-        max-width: 400px;
-    }
-    
     .card--smaller-width {
         max-width: 415px;
     }
@@ -369,23 +354,11 @@ img {
     .main__container {
         max-width: 953px;
     }
-
-    .projects__list {
-        width: 327px;
-    }
 }
 
 @media (max-width: 1435px) {
     .main__container {
         max-width: 892px;
-    }
-
-    .projects__list {
-        width: 290px;
-    }
-
-    .projects__wrapper .projects__list:first-child {
-        margin-right: 10rem;
     }
 
     .card--smaller-width {
@@ -394,36 +367,18 @@ img {
 }
 
 @media (max-width: 1370px) {
-    .projects__list {
-        width: 268px;
-    }
-
     .main__container {
         max-width: 799px;
-    }
-
-    .projects__wrapper .projects__list:first-child {
-        margin-right: 9rem;
     }
 }
 
 @media (max-width: 1230px) {
-    .projects__wrapper {
-        display: block;
-        margin-right: 0;
-    }
-
-    .projects__list {
-        width: 80%;
-        margin-right: 0;
-    }
-
-    .projects__wrapper .projects__list:first-child {
-        margin-right: 0; 
-    }
-
     .main__container {
         max-width: 603px;
+    }
+
+    .card {
+        max-width: 70%;
     }
 
     .card--smaller-width {
@@ -462,7 +417,7 @@ img {
         max-width: 545px;
     }
 
-    .main section:not(:first-child) {
+    .main .section {
         padding-top: 4rem;
     }
 
@@ -522,7 +477,6 @@ img {
             align-items: center;
             height: 40px;
         }
-
 
         &__item {
             margin-bottom: 0;
@@ -609,6 +563,10 @@ img {
         &__photo {
             width: 100px;
         }
+    }
+
+    .projects__list {
+        justify-content: flex-start;
     }
 }
 
@@ -702,10 +660,6 @@ img {
 
     .skills__list {
         columns: 2;
-    }
-
-    .projects__list {
-        width: 70%;
     }
 }
 
