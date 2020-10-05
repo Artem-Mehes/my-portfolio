@@ -235,86 +235,86 @@ img {
 .cards-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .card {
     margin-bottom: 3rem;
-    max-width: 34%;
+    max-width: 30%;
+    height: 100%;
 
     &__title {
         margin-bottom: 1rem;
         text-align: center;
     }
 
-    &__img {
-        margin-right: 1rem;
-        object-fit: contain;
-        border: 5px solid;
-    }
-
     &__inner {
         position: relative;
         display: flex;
-
-        &--smaller-height {
-            max-height: 215px;
-        }
-
-        &:hover .icons {
-            display: flex;
-        }
     }
 
-    &--smaller-width {
-        max-width: 480px;
-    }
-}
-
-
-.technologies {
-    font-size: .7rem;
-    pointer-events: none;
-    min-width: 49%;
-
-    &__list {
-        list-style: disc;
+    &__img {
+        border: 5px solid;
     }
 
-    &__item {
-        margin: 0 0 0 1rem;
-    }
-}
-
-.icons {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    &__list {
-        background-color: $bg-color;
+    &:hover &__overlay {
         display: flex;
-        min-width: 50%;
-        border-radius: 2rem;
-        justify-content: space-evenly;
-        align-items: center;
-        height: 4.5rem;
     }
+
+    &__overlay {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        padding: 1rem;
+    }
+
+    &__content {
+        background-color: $bg-color;
+        border-radius: 1rem;
+        width: 100%;
+        max-height: 100%;
+        margin: auto 0;
+        position: relative;
+        padding: 1rem;
+    }
+}
+
+.links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
 
     &__item {
         margin-bottom: 0;
     }
 
+    &__item + &__item {
+        margin-left: 1rem;
+    }
+
     &__link {
-        font-size: 2rem;
+        font-size: 1.3rem;
 
         &:hover {
             color: $accent-color;
         }
+    }
+}
+
+.technologies {
+    font-size: .7rem;
+
+    &__list {
+        list-style: disc;
+        columns: 3;
+    }
+
+    &__item {
+        margin: 0 0 0 1rem;
     }
 }
 
