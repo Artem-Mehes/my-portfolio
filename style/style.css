@@ -512,8 +512,8 @@ img {
 }
 
 .certification .card__img:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .education__item {
