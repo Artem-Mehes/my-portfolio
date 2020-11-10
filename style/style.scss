@@ -362,17 +362,27 @@ img {
 }
 
 .technologies {
+    margin-left: 1rem;
+
     &__title {
         font-weight: 600;
     }
 
     &__list {
         list-style: disc;
-        columns: 2;
+        width: 273px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__item {
         margin-bottom: 0;
+
+
+        &:nth-child(odd) {
+            flex-basis: 48%;
+            margin-right: 2rem;
+        }
     }
 }
 

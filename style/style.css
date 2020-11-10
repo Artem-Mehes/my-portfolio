@@ -490,18 +490,32 @@ img {
   height: 50px;
 }
 
+.technologies {
+  margin-left: 1rem;
+}
+
 .technologies__title {
   font-weight: 600;
 }
 
 .technologies__list {
   list-style: disc;
-  -webkit-columns: 2;
-          columns: 2;
+  width: 273px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .technologies__item {
   margin-bottom: 0;
+}
+
+.technologies__item:nth-child(odd) {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin-right: 2rem;
 }
 
 .certification .card__img {
