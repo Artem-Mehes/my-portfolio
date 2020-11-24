@@ -1,607 +1,1280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" iyntegrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="header__container container">
-            <div class="header__inner">
-                <h1>My Portfolio</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Portfolio</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+			integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			iyntegrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__inner">
+					<h1>My Portfolio</h1>
 
-                <ul class="header__contacts">
-                    <li class="header__item"><a class="header__link" href="tel:+380962504022">+380962504022</a></li>
-                    <li class="header__item"><a class="header__link" href="mailto:artemmeges@gmail.com">artemmeges@gmail.com</a></li>
-                </ul>
+					<ul class="header__contacts">
+						<li class="header__item">
+							<a class="header__link" href="tel:+380962504022"
+								>+380962504022</a
+							>
+						</li>
+						<li class="header__item">
+							<a
+								class="header__link"
+								href="mailto:artemmeges@gmail.com"
+								>artemmeges@gmail.com</a
+							>
+						</li>
+					</ul>
+				</div>
             </div>
-        </div>
-    </header>
-
-    <div class="wrapper">
-        <aside class="aside-nav">
-            <nav class="aside-nav__nav nav" id="nav">
-                <span class="nav__highlight" id="nav-highlight"></span>
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#general">General Information</a></li>
-                    <li class="nav__item"><a href="#skills">Skills</a></li>
-                    <li class="nav__item"><a href="#projects">Projects</a></li>
-                    <li class="nav__item"><a href="#certification">Certification</a></li>
-                    <li class="nav__item"><a href="#education">Education</a></li>
-                </ul>
-            </nav>
-        </aside>
-    
-        <main class="main">
-            <div class="main__container container container--small">
-                <section class="about">
-                    <div class="about__info">
-                        <h2 class="about__title">Mehes Artem</h2>
-                        <p class="about__subtitle">Junior Front-End Developer</p>
-                    </div>
-                    
-                    <img class="about__photo" src="images/photo.jpg" alt="photo">
-                </section>
-    
-                <section class="general section" id="general">
-                    <h3 class="general__title">General Information</h3>
-    
-                    <ul class="general__list">
-                        <li>My experience in front end development is less than
-                            one year , but I study all the time, want to grow and
-                            solve hard tasks. In the future, I want to develop in
-                            the direction of a <span>full stack</span>.</li>
-                        <li><span>Desired place of work:</span> Kiev or remote.</li>
-                        <li><span>Desired salary:</span> 400$-500$.</li>
-                        <li>
-                            <p>Languages:</p>
-                            <ul class="general__languages languages">
-                                <li class="languages__item">English - Intermediate</li>
-                                <li class="languages__item">Ukrainian - Native</li>
-                                <li class="languages__item">Russian - Native</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </section>
-    
-                <section class="skills section" id="skills">
-                    <h3>Skills</h3>
-    
-                    <ul class="skills__list">
-                        <li class="skills__item">Semantic HTML</li>
-                        <li class="skills__item">CSS (flexbox, CSS Grid)</li>
-                        <li class="skills__item">Adaptive layout</li>
-                        <li class="skills__item">JavaScript (ES6+)</li>
-                        <li class="skills__item">React</li>
-                        <li class="skills__item">React Hooks</li>
-                        <li class="skills__item">React Router</li>
-                        <li class="skills__item">Typescript</li>
-                        <li class="skills__item">Styled Components</li>
-                        <li class="skills__item">Redux</li>
-                        <li class="skills__item">Git / Github / Firebase</li>
-                        <li class="skills__item">npm / yarn</li>
-                        <li class="skills__item">SCSS</li>
-                        <li class="skills__item">Bootstrap 4, React-Bootstrap</li>
-                        <li class="skills__item">Using BEM methodology for class names in CSS</li>
-                        <li class="skills__item">Basics of Webpack, Gulp</li>
-                        <li class="skills__item">Understand the principles of OOP</li>
-                        <li class="skills__item">A little bit of Jquery</li>
-                        <li class="skills__item">Can work with API</li>
-                        <li class="skills__item">Figma, Photoshop</li>
-                        <li class="skills__item">Basics of Node.js and express.js</li>
-                    </ul>
-                </section>
-
-                <section class="projects section" id="projects">
-                    <h3>Projects</h3>
-                        <ul class="projects__list cards-list">
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Games Landing Page</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/games-project.png" alt="Games Landing Page">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">SCSS</li>
-                                                    <li class="technologies__item">Jquery</li>
-                                                    <li class="technologies__item">Slick</li>
-                                                    <li class="technologies__item">Photoshop</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/game-site"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/game-site/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Interior Landing Page</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/interior-project.png" alt="Interior Landing Page">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">SCSS</li>
-                                                    <li class="technologies__item">CSS Grid</li>
-                                                    <li class="technologies__item">Jquery</li>
-                                                    <li class="technologies__item">Slick</li>
-                                                    <li class="technologies__item">Photoshop</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/interior-site"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/interior-site/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Who wants to be a millionaire?</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/millionaire-project.png" alt="Who wants to be a millionaire?">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">                              
-                                                    <li class="technologies__item">SCSS</li>                                         
-                                                    <li class="technologies__item">React</li>
-                                                    <li class="technologies__item">Hooks</li>
-                                                    <li class="technologies__item">PropTypes</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/react-millionaire-game"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/react-millionaire-game/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">IP address tracker</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/ip-address-tracker.png" alt="IP address tracker">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">SCSS</li>
-                                                    <li class="technologies__item">Native JS</li>
-                                                    <li class="technologies__item">Leaflet</li>
-                                                    <li class="technologies__item">IPify</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/ip-address-tracker"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/ip-address-tracker/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Pokemon App</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/pokemon-project.png" alt="Pokemon App">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">                                                   
-                                                    <li class="technologies__item">SCSS</li>
-                                                    <li class="technologies__item">CSS Grid</li>
-                                                    <li class="technologies__item">React</li>
-                                                    <li class="technologies__item">Hooks</li>
-                                                    <li class="technologies__item">React-Router</li>
-                                                    <li class="technologies__item">Fetch, async / await</li>
-                                                    <li class="technologies__item">Poke API</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/react-pokemon-app/tree/master"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/react-pokemon-app/#/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Marvel Comics App</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/marvel-project.png" alt="Marvel Comics App">
-                                        <div class="card__overlay">                       
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">CSS Grid</li>
-                                                    <li class="technologies__item">Native JS</li>
-                                                    <li class="technologies__item">Local Storage</li>
-                                                    <li class="technologies__item">Crypto JS</li>
-                                                    <li class="technologies__item">Fetch, async / await</li>
-                                                    <li class="technologies__item">Marvel API</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/js-random-joke"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">React Test Task</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/react-test-task.png" alt="React Test Task for Junior Developer Vacancy">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">                                                
-                                                    <li class="technologies__item">SCSS</li> 
-                                                    <li class="technologies__item">React-Bootstrap</li>
-                                                    <li class="technologies__item">React-Router</li>
-                                                    <li class="technologies__item">Redux</li>
-                                                    <li class="technologies__item">React-Calendar</li>
-                                                </ul>
-                                            </div>
-    
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/react-test-task"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Random Jokes App</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/joke-project.png" alt="Random Jokes App">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">Native JS</li>                                 
-                                                    <li class="technologies__item">Fetch</li>
-                                                    <li class="technologies__item">Local Storage</li>
-                                                    <li class="technologies__item">Chuck Norris API</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/js-random-joke"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/js-random-joke/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Tic-Tac-Toe Game</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/tic-tac-toe-project.png" alt="Tic-Tac-Toe Game">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">                                           
-                                                    <li class="technologies__item">React</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/react-tic-tac-toe/tree/master"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/react-tic-tac-toe/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>        
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Currency Rate App</figcaption>
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/rate-project.png" alt="Currency Rate App">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">React</li>
-                                                    <li class="technologies__item">React-Select</li>
-                                                    <li class="technologies__item">Fetch</li>
-                                                    <li class="technologies__item">React-Slick</li>
-                                                    <li class="technologies__item">Currency Rate API</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/react-currency-rate/tree/master"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/react-currency-rate/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Costs Calculator</figcaption>                                   
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/costs-project.png" alt="tic-tac-toe">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">React</li>
-                                                    <li class="technologies__item">Local Storage</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-gh" href="https://github.com/Artem-Mehes/react-expenses-calculator/tree/master"></a></li>
-                                                <li class="links__item"><a class="links__link icon-link" href="https://artem-mehes.github.io/react-expenses-calculator/"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">To-Do List</figcaption>                        
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/to-do-project.png" alt="To-Do List">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">                                       
-                                                    <li class="technologies__item">Native JS</li>
-                                                    <li class="technologies__item">Local Storage</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-cp" href="https://codepen.io/artem-meges/pen/PoZRoxN?editors=0010"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Calculator</figcaption>                                   
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/calculator-project.png" alt="Calculator">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">CSS Grid</li>
-                                                    <li class="technologies__item">Native JS</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-cp" href="https://codepen.io/artem-meges/pen/yLOYpzx?editors=0010"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                            <li class="projects__card card">
-                                <figure>
-                                    <figcaption class="card__title">Form Validation</figcaption>                                   
-                                    <div class="card__inner">
-                                        <img class="card__img" src="images/validation-project.png" alt="Form Validation">
-                                        <div class="card__overlay">
-                                            <div class="card__technologies technologies">
-                                                <h4 class="technologies__title">Used Technologies:</h4>
-                                                <ul class="technologies__list">
-                                                    <li class="technologies__item">Native JS</li>
-                                                </ul>
-                                            </div>
-
-                                            <ul class="card__links links">
-                                                <li class="links__item"><a class="links__link icon-cp" href="https://codepen.io/artem-meges/pen/wvGBWao?editors=0010"></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </figure>
-                            </li>
-                        </ul>
-                </section>
-
-                <section class="certification section" id="certification">
-                    <h3>Certification</h3>
-                        <ul class="certification__list cards-list">
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">JavaScript (Basic)</figcaption>
-                                    <a href="https://www.hackerrank.com/certificates/e607df9a9d98">
-                                        <img class="card__img" src="images/hr-js.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">React (Basic)</figcaption>
-                                    <a href="https://www.hackerrank.com/certificates/f9c7c68df887">
-                                        <img class="card__img" src="images/hr-react.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Soft Serve Web UI Sertification</figcaption>
-                                    <a href="https://career.softserveinc.com/uk-ua/certification/verification">
-                                        <img class="card__img" src="images/webui.jpg" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Programming Foundations</figcaption>
-                                    <a href="https://coursera.org/share/afc796e785abab82f4bb330940120b16">
-                                        <img class="card__img" src="images/progr-found.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Version Control with Git</figcaption>
-                                    <a href="https://coursera.org/share/24a63dd86d3f872ef3eeb20036d07d11">
-                                        <img class="card__img" src="images/git.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Bootstrap 4</figcaption>
-                                    <a href="https://www.sololearn.com/Certificate/1024-16586399/pdf/">
-                                        <img class="card__img" src="images/bs4.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Web Development with React</figcaption>
-                                    <a href="https://coursera.org/share/19fc170730cf929ff809e9d3cf6dc0f7">
-                                        <img class="card__img" src="images/front-end.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Front-end Development with ReactJS</figcaption>
-                                    <a href="https://coursera.org/share/7e8c5a2029b60633d1524b835df920f4">
-                                        <img class="card__img" src="images/intro.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Build Your First React Website</figcaption>
-                                    <a href="https://coursera.org/share/fddc5a9b8c7acf20f0e3dbfdb8b0ce53">
-                                        <img class="card__img" src="images/first-website.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">Animated Components with React</figcaption>
-                                    <a href="https://coursera.org/share/273cc38d629cf36f9e841faa84251503">
-                                        <img class="card__img" src="images/anim.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">React. Lite Level</figcaption>
-                                    <a href="https://itgid.info/img/certificate/02_igr1156.png">
-                                        <img class="card__img" src="images/react-lite.png" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">HTML Fundamentals</figcaption>
-                                    <a href="https://www.sololearn.com/Certificate/1014-16586399/pdf/">
-                                        <img class="card__img" src="images/html-fundam.jpg" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">CSS Fundamentals</figcaption>
-                                    <a href="https://www.sololearn.com/Certificate/1023-16586399/pdf/">
-                                        <img class="card__img" src="images/css-fundam.jpg" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">JavaScript Tutorial course</figcaption>
-                                    <a href="https://www.sololearn.com/Certificate/1024-16586399/pdf/">
-                                        <img class="card__img" src="images/js.jpg" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                            <li class="card">
-                                <figure>
-                                    <figcaption class="card__title">React + Redux</figcaption>
-                                    <a href="https://www.sololearn.com/Certificate/1097-16586399/pdf/">
-                                        <img class="card__img" src="images/react-redux.jpg" alt="certificate">
-                                    </a>
-                                </figure>
-                            </li>
-                        </ul>
-                </section>
-
-                <section class="education section" id="education">
-                    <h3>Education</h3>
-
-                    <div class="education__item">
-                        <div class="education__title">
-                            <span>Radiotechnics</span> Sep. 2012 - Jun. 2015
-                        </div>
-                        
-                        <div class="education__place">
-                            Kiev College of Communications
-                        </div>
-                    </div>
-
-                    <hr>
-
-                    <div class="education__item">
-                        <div class="education__title">
-                            <span>Medicine</span> Sep. 2015 - Jun. 2021 
-                        </div>
-                        
-                        <div class="education__place">
-                            Bogomolets National Medical University
-                        </div>
-                    </div>
-                </section>
-            </div> 
-        </main>
-    
-        <aside class="socials">
-            <div class="socials__burger-wrapper burger-wrapper" id="burger-wrapper">
-                <div class="burger-wrapper__burger" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            
+            <div class="header__theme-wrapper" id="toggle-theme">
+                <button class="header__theme-btn"></button>
             </div>
+		</header>
 
-            <ul class="socials__list">
-                <li class="socials__item"><a class="socials__link icon-in" href="https://www.linkedin.com/in/artem-mehes-b011901b6/"></a></li>
-                <li class="socials__item"><a class="socials__link icon-tg" href="https://t.me/Artem_Meges"></a></li>
-                <li class="socials__item"><a class="socials__link icon-cp" href="https://codepen.io/collection/XdJjPa"></a></li>
-                <li class="socials__item"><a class="socials__link icon-gh" href="https://github.com/Artem-Mehes"></a></li>
-            </ul>
-        </aside>
-    </div>  
+		<div class="wrapper">
+			<aside class="aside-nav">
+				<nav class="aside-nav__nav nav" id="nav">
+					<span class="nav__highlight" id="nav-highlight"></span>
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#general">General Information</a>
+						</li>
+						<li class="nav__item"><a href="#skills">Skills</a></li>
+						<li class="nav__item">
+							<a href="#projects">Projects</a>
+						</li>
+						<li class="nav__item">
+							<a href="#certification">Certification</a>
+						</li>
+						<li class="nav__item">
+							<a href="#education">Education</a>
+						</li>
+					</ul>
+				</nav>
+			</aside>
 
-    <script src="index.js"></script>
-</body>
+			<main class="main">
+				<div class="main__container container container--small">
+					<section class="about">
+						<div class="about__info">
+							<h2 class="about__title">Mehes Artem</h2>
+							<p class="about__subtitle">
+								Junior Front-End Developer
+							</p>
+						</div>
+
+						<img
+							class="about__photo"
+							src="images/photo.jpg"
+							alt="photo"
+						/>
+					</section>
+
+					<section class="general section" id="general">
+						<h3 class="general__title">General Information</h3>
+
+						<ul class="general__list">
+							<li>
+								My experience in front end development is less
+								than one year , but I study all the time, want
+								to grow and solve hard tasks. In the future, I
+								want to develop in the direction of a
+								<span>full stack</span>.
+							</li>
+							<li>
+								<span>Desired place of work:</span> Kiev or
+								remote.
+							</li>
+							<li><span>Desired salary:</span> 400$-500$.</li>
+							<li>
+								<p>Languages:</p>
+								<ul class="general__languages languages">
+									<li class="languages__item">
+										English - Intermediate
+									</li>
+									<li class="languages__item">
+										Ukrainian - Native
+									</li>
+									<li class="languages__item">
+										Russian - Native
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section class="skills section" id="skills">
+						<h3>Skills</h3>
+
+						<ul class="skills__list">
+							<li class="skills__item">Semantic HTML</li>
+							<li class="skills__item">
+								CSS (flexbox, CSS Grid)
+							</li>
+							<li class="skills__item">Adaptive layout</li>
+							<li class="skills__item">JavaScript (ES6+)</li>
+							<li class="skills__item">React</li>
+							<li class="skills__item">React Hooks</li>
+							<li class="skills__item">React Router</li>
+							<li class="skills__item">Typescript</li>
+							<li class="skills__item">Styled Components</li>
+							<li class="skills__item">Redux</li>
+							<li class="skills__item">
+								Git / Github / Firebase
+							</li>
+							<li class="skills__item">npm / yarn</li>
+							<li class="skills__item">SCSS</li>
+							<li class="skills__item">
+								Bootstrap 4, React-Bootstrap
+							</li>
+							<li class="skills__item">
+								Using BEM methodology for class names in CSS
+							</li>
+							<li class="skills__item">
+								Basics of Webpack, Gulp
+							</li>
+							<li class="skills__item">
+								Understand the principles of OOP
+							</li>
+							<li class="skills__item">A little bit of Jquery</li>
+							<li class="skills__item">Can work with API</li>
+							<li class="skills__item">Figma, Photoshop</li>
+							<li class="skills__item">
+								Basics of Node.js and express.js
+							</li>
+						</ul>
+					</section>
+
+					<section class="projects section" id="projects">
+						<h3>Projects</h3>
+						<ul class="projects__list cards-list">
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Games Landing Page
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/games-project.png"
+											alt="Games Landing Page"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														SCSS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Jquery
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Slick
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Photoshop
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/game-site"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/game-site/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Interior Landing Page
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/interior-project.png"
+											alt="Interior Landing Page"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														SCSS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														CSS Grid
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Jquery
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Slick
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Photoshop
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/interior-site"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/interior-site/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Who wants to be a millionaire?
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/millionaire-project.png"
+											alt="Who wants to be a millionaire?"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														SCSS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Hooks
+													</li>
+													<li
+														class="technologies__item"
+													>
+														PropTypes
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/react-millionaire-game"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/react-millionaire-game/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										IP address tracker
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/ip-address-tracker.png"
+											alt="IP address tracker"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														SCSS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Native JS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Leaflet
+													</li>
+													<li
+														class="technologies__item"
+													>
+														IPify
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/ip-address-tracker"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/ip-address-tracker/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Pokemon App
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/pokemon-project.png"
+											alt="Pokemon App"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														SCSS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														CSS Grid
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Hooks
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React-Router
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Fetch, async / await
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Poke API
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/react-pokemon-app/tree/master"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/react-pokemon-app/#/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Marvel Comics App
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/marvel-project.png"
+											alt="Marvel Comics App"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														CSS Grid
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Native JS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Local Storage
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Crypto JS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Fetch, async / await
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Marvel API
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/js-random-joke"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										React Test Task
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/react-test-task.png"
+											alt="React Test Task for Junior Developer Vacancy"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														SCSS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React-Bootstrap
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React-Router
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Redux
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React-Calendar
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/react-test-task"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Random Jokes App
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/joke-project.png"
+											alt="Random Jokes App"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														Native JS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Fetch
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Local Storage
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Chuck Norris API
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/js-random-joke"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/js-random-joke/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Tic-Tac-Toe Game
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/tic-tac-toe-project.png"
+											alt="Tic-Tac-Toe Game"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														React
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/react-tic-tac-toe/tree/master"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/react-tic-tac-toe/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Currency Rate App
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/rate-project.png"
+											alt="Currency Rate App"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														React
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React-Select
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Fetch
+													</li>
+													<li
+														class="technologies__item"
+													>
+														React-Slick
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Currency Rate API
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/react-currency-rate/tree/master"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/react-currency-rate/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Costs Calculator
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/costs-project.png"
+											alt="tic-tac-toe"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														React
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Local Storage
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-gh"
+														href="https://github.com/Artem-Mehes/react-expenses-calculator/tree/master"
+													></a>
+												</li>
+												<li class="links__item">
+													<a
+														class="links__link icon-link"
+														href="https://artem-mehes.github.io/react-expenses-calculator/"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										To-Do List
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/to-do-project.png"
+											alt="To-Do List"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														Native JS
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Local Storage
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-cp"
+														href="https://codepen.io/artem-meges/pen/PoZRoxN?editors=0010"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Calculator
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/calculator-project.png"
+											alt="Calculator"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														CSS Grid
+													</li>
+													<li
+														class="technologies__item"
+													>
+														Native JS
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-cp"
+														href="https://codepen.io/artem-meges/pen/yLOYpzx?editors=0010"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+							<li class="projects__card card">
+								<figure>
+									<figcaption class="card__title">
+										Form Validation
+									</figcaption>
+									<div class="card__inner">
+										<img
+											class="card__img"
+											src="images/validation-project.png"
+											alt="Form Validation"
+										/>
+										<div class="card__overlay">
+											<div
+												class="card__technologies technologies"
+											>
+												<h4 class="technologies__title">
+													Used Technologies:
+												</h4>
+												<ul class="technologies__list">
+													<li
+														class="technologies__item"
+													>
+														Native JS
+													</li>
+												</ul>
+											</div>
+
+											<ul class="card__links links">
+												<li class="links__item">
+													<a
+														class="links__link icon-cp"
+														href="https://codepen.io/artem-meges/pen/wvGBWao?editors=0010"
+													></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</figure>
+							</li>
+						</ul>
+					</section>
+
+					<section class="certification section" id="certification">
+						<h3>Certification</h3>
+						<ul class="certification__list cards-list">
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										JavaScript (Basic)
+									</figcaption>
+									<a
+										href="https://www.hackerrank.com/certificates/e607df9a9d98"
+									>
+										<img
+											class="card__img"
+											src="images/hr-js.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										React (Basic)
+									</figcaption>
+									<a
+										href="https://www.hackerrank.com/certificates/f9c7c68df887"
+									>
+										<img
+											class="card__img"
+											src="images/hr-react.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Soft Serve Web UI Sertification
+									</figcaption>
+									<a
+										href="https://career.softserveinc.com/uk-ua/certification/verification"
+									>
+										<img
+											class="card__img"
+											src="images/webui.jpg"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Programming Foundations
+									</figcaption>
+									<a
+										href="https://coursera.org/share/afc796e785abab82f4bb330940120b16"
+									>
+										<img
+											class="card__img"
+											src="images/progr-found.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Version Control with Git
+									</figcaption>
+									<a
+										href="https://coursera.org/share/24a63dd86d3f872ef3eeb20036d07d11"
+									>
+										<img
+											class="card__img"
+											src="images/git.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Bootstrap 4
+									</figcaption>
+									<a
+										href="https://www.sololearn.com/Certificate/1024-16586399/pdf/"
+									>
+										<img
+											class="card__img"
+											src="images/bs4.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Web Development with React
+									</figcaption>
+									<a
+										href="https://coursera.org/share/19fc170730cf929ff809e9d3cf6dc0f7"
+									>
+										<img
+											class="card__img"
+											src="images/front-end.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Front-end Development with ReactJS
+									</figcaption>
+									<a
+										href="https://coursera.org/share/7e8c5a2029b60633d1524b835df920f4"
+									>
+										<img
+											class="card__img"
+											src="images/intro.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Build Your First React Website
+									</figcaption>
+									<a
+										href="https://coursera.org/share/fddc5a9b8c7acf20f0e3dbfdb8b0ce53"
+									>
+										<img
+											class="card__img"
+											src="images/first-website.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										Animated Components with React
+									</figcaption>
+									<a
+										href="https://coursera.org/share/273cc38d629cf36f9e841faa84251503"
+									>
+										<img
+											class="card__img"
+											src="images/anim.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										React. Lite Level
+									</figcaption>
+									<a
+										href="https://itgid.info/img/certificate/02_igr1156.png"
+									>
+										<img
+											class="card__img"
+											src="images/react-lite.png"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										HTML Fundamentals
+									</figcaption>
+									<a
+										href="https://www.sololearn.com/Certificate/1014-16586399/pdf/"
+									>
+										<img
+											class="card__img"
+											src="images/html-fundam.jpg"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										CSS Fundamentals
+									</figcaption>
+									<a
+										href="https://www.sololearn.com/Certificate/1023-16586399/pdf/"
+									>
+										<img
+											class="card__img"
+											src="images/css-fundam.jpg"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										JavaScript Tutorial course
+									</figcaption>
+									<a
+										href="https://www.sololearn.com/Certificate/1024-16586399/pdf/"
+									>
+										<img
+											class="card__img"
+											src="images/js.jpg"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+							<li class="card">
+								<figure>
+									<figcaption class="card__title">
+										React + Redux
+									</figcaption>
+									<a
+										href="https://www.sololearn.com/Certificate/1097-16586399/pdf/"
+									>
+										<img
+											class="card__img"
+											src="images/react-redux.jpg"
+											alt="certificate"
+										/>
+									</a>
+								</figure>
+							</li>
+						</ul>
+					</section>
+
+					<section class="education section" id="education">
+						<h3>Education</h3>
+
+						<div class="education__item">
+							<div class="education__title">
+								<span>Radiotechnics</span> Sep. 2012 - Jun. 2015
+							</div>
+
+							<div class="education__place">
+								Kiev College of Communications
+							</div>
+						</div>
+
+						<hr />
+
+						<div class="education__item">
+							<div class="education__title">
+								<span>Medicine</span> Sep. 2015 - Jun. 2021
+							</div>
+
+							<div class="education__place">
+								Bogomolets National Medical University
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+
+			<aside class="socials">
+				<div
+					class="socials__burger-wrapper burger-wrapper"
+					id="burger-wrapper"
+				>
+					<div class="burger-wrapper__burger" id="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<ul class="socials__list">
+					<li class="socials__item">
+						<a
+							class="socials__link icon-in"
+							href="https://www.linkedin.com/in/artem-mehes-b011901b6/"
+						></a>
+					</li>
+					<li class="socials__item">
+						<a
+							class="socials__link icon-tg"
+							href="https://t.me/Artem_Meges"
+						></a>
+					</li>
+					<li class="socials__item">
+						<a
+							class="socials__link icon-cp"
+							href="https://codepen.io/collection/XdJjPa"
+						></a>
+					</li>
+					<li class="socials__item">
+						<a
+							class="socials__link icon-gh"
+							href="https://github.com/Artem-Mehes"
+						></a>
+					</li>
+				</ul>
+			</aside>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
 </html>
